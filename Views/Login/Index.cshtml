@@ -1,0 +1,62 @@
+@model dotNet.Models.Login
+
+@{
+    Layout = null; // Indique que cette vue n'utilise pas de layout
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mon application ASP.NET Core</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js"></script>
+</head>
+<body>
+    <div class="container">
+        @using (Html.BeginForm("List", "Login", FormMethod.Post, new { @class = "position-absolute top-5 left-20" }))
+        {
+            @Html.AntiForgeryToken()
+            <nav class="form-horizontal">
+                <h4 class="text-info">Connexion</h4>
+                <hr class="" />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <p>Si vous n'avez pas de compte, vous pouvez @Html.ActionLink("vous inscrire", "Register", "Login")</p>
+                
+                <div class="form-group">
+                    @Html.LabelFor(model => model.UserName, new { @class = "control-label" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control", placeholder = "Nom d'utilisateur" } })
+                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Password, new { @class = "control-label" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Mot de passe" } })
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-default">
+                    <a href="/Login/Index" class="btn btn-link btn-xs">Mot de passe oublié ?</a>
+                    <div class="nav navbar-nav navbar-right">
+                        <div class="btn-group btn-group-justified">
+                            <input type="reset" value="Annuler" class="btn btn-danger" />
+                            <input type="submit" value="Se connecter" class="btn btn-info" />
+                        </div>
+                    </div>
+                </nav>
+            </nav>
+        }
+    </div>
+    
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+@model dotNet.Models.Animal
+
+<h2>Supprimer @Model.nom</h2>
+
+<p>Êtes-vous sûr de vouloir supprimer cet animal ?</p>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="nom" />
+    <button type="submit" class="btn btn-danger">Confirmer</button>
+    <a asp-action="Index" class="btn btn-secondary">Annuler</a>
+</form>

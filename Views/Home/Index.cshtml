@@ -1,0 +1,15 @@
+@model dotNet.Models.Visiteur
+
+@{
+    ViewData["Title"] = "Home";
+}
+<h2>Index</h2>
+<a href="/Login">Login pour voir la liste des animaux</a><br>
+<p>@ViewBag.data[0] @Model.prenom</p>
+<div class="text-center">
+    @using (Html.BeginForm()) {
+        <p>Comment t'appelles-tu ?</p>
+        @Html.TextBox("prenom_visiteur", Model.prenom)
+        <input type="submit" value="valider" />
+    }
+</div>

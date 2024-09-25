@@ -1,0 +1,50 @@
+[
+  {
+    "key": 1,
+    "pattes": 4,
+    "type": "Chien",
+    "nom": "Milou",
+    "couleur": "Gris",
+    "ImageF": "wwwroot\\images\\milouImage.webp"
+  },
+  {
+    "key": 2,
+    "pattes": 2,
+    "type": "chat",
+    "nom": "Tom",
+    "couleur": "Bleu",
+    "ImageF": "wwwroot\\images\\tomImage.jpg"
+  },
+  {
+    "key": 3,
+    "pattes": 2,
+    "type": "souris",
+    "nom": "Jerry",
+    "couleur": "brun",
+    "ImageF": "wwwroot\\images\\jerryImage.png"
+  },
+  {
+    "key": 4,
+    "pattes": 2,
+    "type": "Souris",
+    "nom": "Mickey",
+    "couleur": "Noir",
+    "ImageF": "wwwroot\\images\\Mickey_Mouse.webp"
+  },
+  {
+    "key": 5,
+    "pattes": 4,
+    "type": "Chien",
+    "nom": "Pluto",
+    "couleur": "Maron",
+    "ImageF": "wwwroot\\images\\pluto.webp"
+  },
+  {
+    "key": 6,
+    "pattes": 2,
+    "type": "Chien",
+    "nom": "Goffy",
+    "couleur": "Noir",
+    "ImageF": null
+  }
+]

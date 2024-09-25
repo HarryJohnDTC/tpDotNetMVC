@@ -1,0 +1,62 @@
+<h1>Liste des Animaux</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Clé</th>
+            <th>Nom</th>
+            <th>Type</th>
+            <th>Couleur</th>
+            <th>Pattes</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var animal in Model)
+        {
+            <tr>
+                <td>@animal.key</td>
+                <td>@animal.nom</td>
+                <td>@animal.type</td>
+                <td>@animal.couleur</td>
+                <td>@animal.pattes</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(animal.ImageF))
+                    {
+                        var imageUrl = animal.ImageF.Replace("wwwroot\\", "/").Replace("\\", "/");
+                        <a href="@imageUrl" target="_blank">Voir l'image</a>
+                    }
+                    else
+                    {
+                        <span>Pas d'image disponible</span>
+                    }
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-key="@animal.key">Modifier</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a asp-action="Create" class="btn btn-primary">Ajouter un nouvel animal</a>
+</div>
+
+<!-- Pagination Links -->
+<div class="d-flex justify-content-center mt-3">
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            @for (int i = 1; i <= ViewBag.TotalPages; i++)
+            {
+                <li class="page-item @(ViewBag.CurrentPage == i ? "active" : "")">
+                    <a class="page-link" asp-action="Index" asp-route-pageNumber="@i">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>
+
+    
+
