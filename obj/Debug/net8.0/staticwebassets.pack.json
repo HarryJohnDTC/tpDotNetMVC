@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Jobsa\\Desktop\\lesona_esti\\dotNet\\wwwroot\\images\\2808d39b-dc3d-49eb-bfa4-ed99a645afbc_sonic.jpg",
+      "PackagePath": "staticwebassets\\images\\2808d39b-dc3d-49eb-bfa4-ed99a645afbc_sonic.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jobsa\\Desktop\\lesona_esti\\dotNet\\wwwroot\\images\\854f752e-c739-494b-85e8-1bd111ca0218_bugs.jpg",
+      "PackagePath": "staticwebassets\\images\\854f752e-c739-494b-85e8-1bd111ca0218_bugs.jpg"
+    },
+    {
       "Id": "C:\\Users\\Jobsa\\Desktop\\lesona_esti\\dotNet\\wwwroot\\images\\Mickey_Mouse.webp",
       "PackagePath": "staticwebassets\\images\\Mickey_Mouse.webp"
     },
@@ -27,6 +35,10 @@
     {
       "Id": "C:\\Users\\Jobsa\\Desktop\\lesona_esti\\dotNet\\wwwroot\\images\\pluto.webp",
       "PackagePath": "staticwebassets\\images\\pluto.webp"
+    },
+    {
+      "Id": "C:\\Users\\Jobsa\\Desktop\\lesona_esti\\dotNet\\wwwroot\\images\\sonic.jpg",
+      "PackagePath": "staticwebassets\\images\\sonic.jpg"
     },
     {
       "Id": "C:\\Users\\Jobsa\\Desktop\\lesona_esti\\dotNet\\wwwroot\\images\\tomImage.jpg",

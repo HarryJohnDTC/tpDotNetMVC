@@ -46,5 +46,21 @@
     "nom": "Goffy",
     "couleur": "Noir",
     "ImageF": null
+  },
+  {
+    "key": 7,
+    "pattes": 2,
+    "type": "herisson",
+    "nom": "sonic",
+    "couleur": "bleu",
+    "ImageF": "/images/2808d39b-dc3d-49eb-bfa4-ed99a645afbc_sonic.jpg"
+  },
+  {
+    "key": 8,
+    "pattes": 2,
+    "type": "lapin",
+    "nom": "Bugs",
+    "couleur": "gris",
+    "ImageF": "/images/854f752e-c739-494b-85e8-1bd111ca0218_bugs.jpg"
   }
 ]

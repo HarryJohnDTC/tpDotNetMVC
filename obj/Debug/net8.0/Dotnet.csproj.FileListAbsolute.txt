@@ -33,3 +33,4 @@ C:\Users\Jobsa\Desktop\lesona_esti\dotNet\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Jobsa\Desktop\lesona_esti\dotNet\obj\Debug\net8.0\Dotnet.csproj.AssemblyReference.cache
 C:\Users\Jobsa\Desktop\lesona_esti\dotNet\obj\Debug\net8.0\Dotnet.csproj.Up2Date
 C:\Users\Jobsa\Desktop\lesona_esti\dotNet\bin\Debug\net8.0\App_data\users.json
+C:\Users\Jobsa\Desktop\lesona_esti\dotNet\obj\Debug\net8.0\Dotnet.sourcelink.json
